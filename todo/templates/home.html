@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}
+  TO-DO-APP
+{% endblock %}
+{% block content %}
+
+<div class="container">
+  <br>
+  <br>
+  <h1>Welcome to the To-Do-App</h1>
+  <h2>Register or login to continue</h2>
+  <p>After you register you will be able make your to-do-list</p>
+  <a class="btn btn-primary" href="{{ url_for('register_page')}}" role="button">Register</a>
+
+  <a class="btn btn-info" href="{{ url_for('login_page')}}" role="button">Log in</a>
+
+</div>
+
+{% endblock %}

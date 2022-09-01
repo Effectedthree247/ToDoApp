@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}
+  Add Item
+{% endblock %}
+{% block content %}
+<body class="text-center">
+    <div class="container-sm">
+        <form method="POST" class="form-register" style="color:white">
+             {{ form.hidden_tag() }}
+            <h1 class="h3 mb-3 font-weight-normal">
+                Add Item
+            </h1>
+            <br>
+            {{ form.itemname(class="form-control", placeholder="Item Name") }}
+            <br>
+            {{ form.duration(class="form-control", placeholder="Duration") }}
+            <br>
+            {{ form.priority(class="form-control", placeholder="Priority") }}
+            <br>
+            {{ form.submit(class="btn btn-lg btn-block btn-primary") }}
+        </form>
+    </div>
+</body>
+
+{% endblock %}
